@@ -1,29 +1,80 @@
-h1{
+table{
+  width: 95%;
+  margin: auto;
+  border-collapse: collapse;
+}
+thead>tr>th:first-child{
+  width: 24%;
+  background-color: #7987ac;
+  border-top-left-radius:15px ;
+}
+thead>tr>th:nth-child(2){
+  width: 19%;
+  background-color: #4f628d;
+}
+thead>tr>th:nth-child(3){
+  width: 19%;
+  background-color: #2f4173;
+}
+thead>tr>th:nth-child(4){
+  width: 19%;
+  background-color: #162954;
+}
+thead>tr>th:last-child{
+  width: 19%;
+  background-color: #07153a;
+  border-top-right-radius:15px ;
+}
+thead>tr>th>p{
+  color: white;
+}
+thead>tr>th:not(:first-child)>p:nth-child(2){
+  font-size: 25px;
+}
+thead>tr>th:not(:first-child)>p:nth-child(3){
+  margin-top: -25px;
+}
+tbody>tr:nth-child(odd)>td:nth-child(odd),
+tfoot>tr:nth-child(odd)>th:nth-child(odd){
+  background-color:#dbdbdb;
+}
+tbody>tr:nth-child(odd)>td:nth-child(even),
+tbody>tr:nth-child(even)>td:nth-child(odd),
+tfoot>tr:nth-child(odd)>th:nth-child(even){
+  background-color:#ececec;
+}
+tbody>tr:nth-child(even)>td:nth-child(even){
+  background-color:white;
+}
+tbody>tr>td:first-child{
+  padding-left:25px;
+}
+tbody>tr>td:not(:first-child){
   text-align: center;
   text-transform: capitalize;
 }
-.wrapping-img{
-  text-align: center;
+tfoot>tr>th{
+  padding: 1% 1% ;
 }
-img{
-  width: 100%;
-  
+tfoot>tr>th:first-child{
+  border-bottom-left-radius: 15px;
 }
-figure{
-  display: inline-block;
-  margin: 0px auto;
+tfoot>tr>th:last-child{
+  border-bottom-right-radius: 15px;
 }
-.imj{
-  box-sizing: border-box;
-  width: 200px;
-  height: 200px;
-  padding: 0px;
-  background-color: rgba(0, 140, 255, 0.397);
-  border:10px double rgba(0, 255, 221, 0.658);
-  border-top-width: 10px;
-  object-fit: cover;
+tfoot>tr>th:not(:first-child)>a{
+  border:#6d6b6c solid 2px;
+  text-decoration: none;
 }
-figcaption{
-  background-color: rgba(0, 140, 255, 0.397);
-  border:10px double rgba(0, 255, 221, 0.658);
+tfoot>tr>th:not(:first-child)>a:link{
+  color:black;
+}
+tfoot>tr>th:not(:first-child)>a:visited{
+  color:#6d6b6c;
+}
+tfoot>tr>th:not(:first-child)>a:focus,
+tfoot>tr>th:not(:first-child)>a:hover{
+  color:#800000;
+  border:#800000 solid 3px;
+  outline:none;
 }
